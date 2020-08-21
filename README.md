@@ -7,6 +7,10 @@
 4. 点击"无障碍服务"，开启"营销小精灵 APK"，开启后点击设置可以回到客户端主界面
 5. 点击"开始工作"
 
+## 超级用户
+|  动作   | API  | 示例  |
+|  ----  | ----  | ---- |
+| 创建代理商 | mng_new |curl -b cookie -c cookie -X POST 'https://api.media-marketing-server.com/mng_login?mng=13661234567' -d '{"root_key":"XXXX-XXXX-XXXX-XXXX"}'
 
 ## 代理商 
 |  动作   | API  | 示例  |
