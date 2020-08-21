@@ -24,7 +24,14 @@
 | 列出组内许可证 | lcs_grp__list |curl -b cookie -c cookie 'https://api.media-marketing-server.com/lcs_grp__list?grp=XX'
 | 许可证解绑 | lcs_reset |curl -b cookie -c cookie 'https://api.media-marketing-server.com/lcs_reset?lcs=293E-D82C-6005-625D'
 
+## 任务列表
 
-
-
+### 搜索用户评论区关注私信
+```shell
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSPLQGZSX" -d '{ "go_first":"1", "reset":"0", "q":"玩具", "search_mode":"video", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1", "pr_talk2":"1", "talk2_triggerwords":["买","多少钱"], "talk2_texts":["我有货，更便宜","真棒!"] }'
+```
+### 搜索转发视频
+```shell
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSZFSP" -d '{ "go_first":"1", "reset":"0", "q":"玩具", "search_mode":"video", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_forward":"1" }'
+```
 
