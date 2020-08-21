@@ -10,7 +10,7 @@
 ## 超级用户
 |  动作   | API  | 示例  |
 |  ----  | ----  | ---- |
-| 创建代理商 | mng_new |curl -b cookie -c cookie -X POST 'https://api.media-marketing-server.com/mng_login?mng=13661234567' -d '{"root_key":"XXXX-XXXX-XXXX-XXXX"}'
+| 创建代理商 | mng_new |curl -b cookie -c cookie -X POST 'https://api.media-marketing-server.com/mng_new?mng=13661234567' -d '{"root_key":"XXXX-XXXX-XXXX-XXXX"}'
 
 ## 代理商 
 |  动作   | API  | 示例  |
