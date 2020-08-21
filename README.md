@@ -7,6 +7,7 @@
 4. 点击"无障碍服务"，开启"营销小精灵 APK"，开启后点击设置可以回到客户端主界面
 5. 点击"开始工作"
 
+
 ## 代理商 
 |  动作   | API  | 示例  |
 |  ----  | ----  | ---- |
@@ -34,6 +35,22 @@
 
 ## 任务列表
 
+### 字段一览
+|  字段名 | 说明 |
+|  ----   | ---- |
+| go_first | 1:本任务放入任务池顶，相关设备结束当前任务后立即执行此任务 0:本任务放入任务池底 |
+| reset | 是否清空任务池 |
+| q | 搜索关键词 |
+| search_mode | 搜索模式:视频(视频) |
+|CNT:video_view_total | 看多少个视频 |
+| dur:avg | 观看时长的平均值 |
+| dur:std | 观看时长的"方差/均值"比率，0表示一样长，0.5表示方差为均值一半 |
+| pr_digg | 点赞概率|
+| pr_talk2 | 触发私信概率 |
+| talk2_triggerwords | 评论含有哪些关键词将触发私信 |
+| talk2_texts | 私信内容，随机选择 |
+| pr_forward | 转发概率|
+
 ### 搜索用户评论区关注私信
 ```shell
 $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSPLQGZSX" \
@@ -44,4 +61,18 @@ $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order
 $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSZFSP" \
   -d '{ "go_first":"1", "reset":"0", "q":"玩具", "search_mode":"video", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_forward":"1" }'
 ```
+### 搜索转发指定视频
+```shell
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSZFZDSP" \
+  -d '{ "go_first":"1", "reset":"0", "q":"玩具", "search_mode":"video", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_forward":"1" }'
+```
+### 搜索视频点赞
+```shell
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSSPDZ" \
+ -d '{ "go_first":"1", "reset":"0", "q":"玩具", "search_mode":"video", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1" }'
+```
+
+## FAQ
+Q1: 如何快速调出MktBot客户端
+ANS: 在手机上进入"设置/更多设置/无障碍/更多已下载的服务/营销小精灵 APK"，点开启服务后，点击页面底部的"设置"，即可
 
