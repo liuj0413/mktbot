@@ -1,4 +1,4 @@
-# mktbot
+#  营销小精灵 MktBot
 ## 代理商 
 |  动作   | API  | 示例  |
 |  ----  | ----  | ---- |
@@ -28,10 +28,12 @@
 
 ### 搜索用户评论区关注私信
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSPLQGZSX" -d '{ "go_first":"1", "reset":"0", "q":"玩具", "search_mode":"video", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1", "pr_talk2":"1", "talk2_triggerwords":["买","多少钱"], "talk2_texts":["我有货，更便宜","真棒!"] }'
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSPLQGZSX" \
+  -d '{ "go_first":"1", "reset":"0", "q":"玩具", "search_mode":"video", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1", "pr_talk2":"1", "talk2_triggerwords":["买","多少钱"], "talk2_texts":["我有货，更便宜","真棒!"] }'
 ```
 ### 搜索转发视频
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSZFSP" -d '{ "go_first":"1", "reset":"0", "q":"玩具", "search_mode":"video", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_forward":"1" }'
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSZFSP" \
+  -d '{ "go_first":"1", "reset":"0", "q":"玩具", "search_mode":"video", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_forward":"1" }'
 ```
 
