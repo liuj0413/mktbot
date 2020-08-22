@@ -86,102 +86,102 @@ $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order
 
 ### 任务: 搜索指定用户点赞评论
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSZDYHDZPL \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSZDYHDZPL" \
  -d '{ "go_first":"1", "reset":"0", "q":"玩具", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1","pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 搜索指定用户点赞评论_plus
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSZDYHDZPL_plus \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSZDYHDZPL_plus" \
  -d '{ "go_first":"1", "reset":"0", "q":"玩具", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1","pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 关注点赞评论
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_GZDZPL \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_GZDZPL" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1","pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 关注私信Plus
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_GZSX_plus \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_GZSX_plus" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1","pr_talk2":"1", "talk2_triggerwords":["买","多少钱"], "talk2_texts":["我有货，更便宜","真棒!"] }'
 ```
 
 ### 任务: 多条视频点赞
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_GZDZ \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_GZDZ" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1"}'
 ```
 
 ### 任务: 推荐评论
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJPL \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJPL" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 推荐私信
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJSX \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJSX" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5","pr_talk2":"1", "talk2_triggerwords":["买","多少钱"], "talk2_texts":["我有货，更便宜","真棒!"] }'
 ```
 
 ### 任务: 推荐评论点赞 
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJPLDZ \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJPLDZ" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5","pr_digg":"1", "pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 推荐概率点赞
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJGLDZ \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJGLDZ" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10","dur:std":"0.5","pr_digg":"1"}'
 ```
 
 ### 任务: 推荐点赞
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJDZ \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJDZ" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10","dur:std":"0.5"}'
 ```
 
 ### 任务: 推荐浏览
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJLL \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJLL" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10","dur:std":"0.5"}'
 ```
 ### 任务: 推荐回复
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJHF \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJHF" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10","dur:std":"0.5", "pr_talk2":"1", "talk2_triggerwords":["买","多少钱"], "talk2_texts":["我有货，更便宜","真棒!"]}'
 ```
 
 ### 任务: 同城私信
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TCSX \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TCSX" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5","pr_talk2":"1", "talk2_triggerwords":["买","多少钱"], "talk2_texts":["我有货，更便宜","真棒!"] }'
 ```
 
 ### 任务: 同城点赞
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TCDZ \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TCDZ" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10","dur:std":"0.5"}'
 ```
 
 ### 任务: 同城评论点赞
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TCPLDZ \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TCPLDZ" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5","pr_digg":"1", "pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 同城评论
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TCPL \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TCPL" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 同城回复
 ```shell
-$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TCHF \
+$ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TCHF" \
  -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10","dur:std":"0.5", "pr_talk2":"1", "talk2_triggerwords":["买","多少钱"], "talk2_texts":["我有货，更便宜","真棒!"]}'
 ```
 
