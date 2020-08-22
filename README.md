@@ -27,8 +27,8 @@
 
 |  动作   | API  | 示例  |
 |  ----  | ----  | ---- |
-| 登入 | usr_login |curl -b cookie -c cookie -X POST 'https://api.media-marketing-server.com/usr_login?mng=13668888888' -d '{"pwd":"888888"}' 
-| 改密码 | usr_new_pswd | curl -b cookie -c cookie -X POST 'https://api.media-marketing-server.com/usr_new_pswd?mng=13668888888' -d '{"pwd":"888888","pwd_new":"12345"}' 
+| 登入 | usr_login |curl -b cookie -c cookie -X POST 'https://api.media-marketing-server.com/usr_login?usr=13668888888' -d '{"pwd":"888888"}' 
+| 改密码 | usr_new_pswd | curl -b cookie -c cookie -X POST 'https://api.media-marketing-server.com/usr_new_pswd?usr=13668888888' -d '{"pwd":"888888","pwd_new":"12345"}' 
 | 登出 | usr_logout |curl -b cookie -c cookie 'https://api.media-marketing-server.com/usr_logout'
 | 创建组 | lcs_grp__new |curl -b cookie -c cookie 'https://api.media-marketing-server.com/lcs_grp__new?grp=XX'
 | 注销组 | lcs_grp__del |curl -b cookie -c cookie 'https://api.media-marketing-server.com/lcs_grp__del?grp=XX'
