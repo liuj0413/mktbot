@@ -54,7 +54,7 @@
 | talk2_triggerwords | 评论含有哪些关键词将触发私信 |
 | talk2_texts | 私信内容，随机选择 |
 | pr_forward | 转发概率|
-| pr_comments | 进入评论区的概率|
+| pr_comment | 进入评论区的概率|
 | comment_texts | 评论文本，随机选择|
 
 ### 任务: 搜索用户评论区关注私信
@@ -87,19 +87,19 @@ $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order
 ### 任务: 搜索指定用户点赞评论
 ```shell
 $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSZDYHDZPL" \
- -d '{ "go_first":"1", "reset":"0", "q":"玩具", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1","pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
+ -d '{ "go_first":"1", "reset":"0", "q":"玩具", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1","pr_comment":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 搜索指定用户点赞评论_plus
 ```shell
 $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_SSZDYHDZPL_plus" \
- -d '{ "go_first":"1", "reset":"0", "q":"玩具", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1","pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
+ -d '{ "go_first":"1", "reset":"0", "q":"玩具", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1","pr_comment":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 关注点赞评论
 ```shell
 $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_GZDZPL" \
- -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1","pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
+ -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_digg":"1","pr_comment":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 关注私信Plus
@@ -117,7 +117,7 @@ $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order
 ### 任务: 推荐评论
 ```shell
 $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJPL" \
- -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
+ -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_comment":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 推荐私信
@@ -129,7 +129,7 @@ $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order
 ### 任务: 推荐评论点赞 
 ```shell
 $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TJPLDZ" \
- -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5","pr_digg":"1", "pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
+ -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5","pr_digg":"1", "pr_comment":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 推荐概率点赞
@@ -170,13 +170,13 @@ $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order
 ### 任务: 同城评论点赞
 ```shell
 $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TCPLDZ" \
- -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5","pr_digg":"1", "pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
+ -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5","pr_digg":"1", "pr_comment":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 同城评论
 ```shell
 $ curl -b cookie -c cookie -X POST "https://api.media-marketing-server.com/order_new?grp=XX&func=DOUYIN_TCPL" \
- -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_comments":"1", "comment_texts":["真棒","666","我喜欢"] }'
+ -d '{ "go_first":"1", "reset":"0", "CNT:video_view_total":"20", "dur:avg":"10", "dur:std":"0.5", "pr_comment":"1", "comment_texts":["真棒","666","我喜欢"] }'
 ```
 
 ### 任务: 同城回复
